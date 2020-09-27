@@ -4,14 +4,25 @@
 /* 
 /////////////////////////////////////////////////////////////////////////////
 */
-
-body {
-  background: rgb(231, 75, 143);
+.top_background {
+  background: rgb(255, 255, 255);
   background: linear-gradient(
-    325deg,
-    rgba(231, 75, 143, 1) 0%,
-    rgba(127, 141, 223, 1) 38%,
-    rgba(255, 255, 255, 1) 99%
+    330deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(231, 75, 143, 1) 20%,
+    rgba(127, 141, 223, 1) 62%,
+    rgba(255, 255, 255, 1) 140%
+  );
+}
+
+.middle_background {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    55deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(127, 141, 223, 1) 20%,
+    rgba(231, 75, 143, 1) 62%,
+    rgba(255, 255, 255, 1) 100%
   );
 }
 
@@ -19,6 +30,19 @@ body {
   -webkit-box-shadow: 0px 35px 40px -10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 35px 40px -10px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 35px 40px -10px rgba(0, 0, 0, 0.2);
+}
+
+.box-shadow-round {
+  -webkit-box-shadow: 0px 0px 65px 13px rgba(155, 155, 155, 0.3);
+  -moz-box-shadow: 0px 0px 65px 13px rgba(155, 155, 155, 0.3);
+  box-shadow: 0px 0px 65px 13px rgba(155, 155, 155, 0.3);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  /* background-color: red; */
+  padding: 0 20px;
 }
 
 /* header part */
@@ -94,23 +118,17 @@ header .header_buttons .orange_button {
 /* 
 /////////////////////////////////////////////////////////////////////////////
 */
+
 /* top big section */
 
 #top-big {
-  padding: 20px 0 400px;
+  padding: 20px 0 250px;
 }
 
 #top-big:after {
   content: "";
   display: table;
   clear: both;
-}
-
-#top-big .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  /* background-color: red; */
-  padding: 0 20px;
 }
 
 #top-big .container .left_side {
@@ -190,4 +208,143 @@ header .header_buttons .orange_button {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////////
+*/
+
+/* design by */
+
+#design-by {
+  position: relative;
+  top: -100px;
+}
+
+#design-by .design_container {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 5px;
+}
+
+#design-by .design_container .bg-container {
+  background-color: #4c44c1;
+  position: relative;
+  overflow: hidden;
+  padding: 45px;
+}
+#design-by .design_container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#design-by .design_container .info_section {
+  width: 40%;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+#design-by .design_container .info_section .bg-container .bg-image {
+  position: absolute;
+  width: 600px;
+  z-index: 1;
+  opacity: 0.3;
+  right: -200px;
+  top: -100px;
+}
+
+#design-by .design_container .info_section .bg-container .design-info {
+  position: relative;
+  z-index: 2;
+}
+
+#design-by .design_container .info_section h5 {
+  color: #fea83b;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+#design-by .design_container .info_section h3 {
+  color: white;
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+#design-by .design_container .info_section .info_list {
+  margin-bottom: 4rem;
+}
+
+#design-by .design_container .info_section .info_list li {
+  list-style: none;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+#design-by .design_container .info_section .info_list li svg {
+  color: #fea83b;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+#design-by .design_container .info_section .white-btn {
+  background-color: white;
+  border-radius: 50px;
+  padding: 12.5px 65px;
+  text-decoration: none;
+  color: #4c44c1;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+/* 
+/////////////////
+*/
+
+#design-by .design_container .icon_section {
+  width: 60%;
+  /* height: 420px; */
+  background-color: white;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+#design-by .design_container .icon_section .refresh_circle {
+  position: absolute;
+  top: 42%;
+  left: 45%;
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+}
+#design-by .design_container .icon_section .refresh_circle svg {
+  position: relative;
+  color: #fea83b;
+  font-size: 2.5rem;
+  top: 15px;
+  left: 15px;
+}
+
+#design-by .design_container .icon_section .icon_box {
+  width: 50%;
+  height: 210px;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  border: 1px solid #f4f5f7;
+  color: #4c44c1;
+  font-size: 1.3rem;
+}
+
+#design-by .design_container .icon_section .icon_box svg {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  margin-top: 61px;
 }
