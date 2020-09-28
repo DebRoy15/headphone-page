@@ -29,6 +29,9 @@
 input::placeholder {
   color: #d5e2ea;
 }
+input {
+  outline: none;
+}
 
 form svg {
   color: #d5e2ea;
@@ -879,4 +882,64 @@ header .header_buttons .orange_button {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+}
+
+/* 
+/////////////////////////////////////////////////////////////////////////
+*/
+/* footer part */
+
+footer {
+  background-color: #4c44c1;
+  padding: 50px 0;
+  text-align: center;
+  color: #edecfa;
+  margin-top: 50px;
+}
+
+footer h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #edecfa;
+  margin-bottom: 20px;
+}
+footer h2 span {
+  font-weight: 700;
+  color: #fea83b;
+}
+footer .menu {
+  margin-bottom: 20px;
+}
+footer .menu li {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #edecfa;
+  text-decoration: none;
+}
+footer .menu li a {
+  font-weight: 600;
+  color: #edecfa;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+footer .social_media {
+}
+footer .social_media li {
+  display: inline-block;
+  padding: 0 10px;
+}
+footer .social_media li a {
+  color: #e6cdf9;
+  font-size: 2rem;
+  opacity: 0.5;
 }
